@@ -7,7 +7,10 @@
 </head>
 <body>
 	<h1>Verse</h1>
-	<textarea id="area" name="area" rows="10" cols="50"></textarea>
-	<p><input type="submit" value="Reverse"></p>
+	<form action="{% url 'reverse' %}">
+		<textarea name="textarea" rows="10" cols="50"></textarea>
+		<br><br>
+		<p><input type="submit" value="Reverse"></p>
+	</form>
 </body>
 </html>
